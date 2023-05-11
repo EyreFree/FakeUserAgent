@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'FakeUserAgent.swift_Example' do
+  pod 'FakeUserAgent.swift', :path => '../'
+
+  target 'FakeUserAgent.swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
