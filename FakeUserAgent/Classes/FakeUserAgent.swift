@@ -75,6 +75,41 @@ public class FakeUserAgent {
         return BrowsersModel()
     }()
     
+    public func pickOne(browser: BrowserOptions = .all, filter: ((String) -> Bool)? = nil) -> String? {
+        return pickALot(count: 1, browser: browser, filter: filter).first
+    }
+    
+    public func pickALot(count: Int, browser: BrowserOptions = .all, filter: ((String) -> Bool)? = nil) -> [String] {
+        var loop: [(/*result: */[String], /*userAgents: */[String], /*browser: */BrowserOptions)] = [
+            ([String](), userAgents.chrome, BrowserOptions.chrome),
+            ([String](), userAgents.opera, BrowserOptions.opera),
+            ([String](), userAgents.firefox, BrowserOptions.firefox),
+            ([String](), userAgents.safari, BrowserOptions.safari),
+            ([String](), userAgents.edge, BrowserOptions.edge),
+            ([String](), userAgents.internetExplorer, BrowserOptions.internetExplorer),
+        ]
+        
+        for (index, (_, loopUserAgents, loopBrowser)) in loop.enumerated() {
+            if browser.contains(loopBrowser) {
+                if let filter = filter {
+                    loop[index].0 = loopUserAgents.filter({ filter($0) })
+                } else {
+                    loop[index].0 = loopUserAgents
+                }
+            }
+        }
+        let result: [String] = loop.reduce(into: [], { $0 += $1.0 })
+        if result.count <= count {
+            return result
+        } else if 1 == count {
+            let randomIndex: Int = Int.random(in: 0..<result.count)
+            return [result[randomIndex]]
+        } else {
+            let randomElements: [String] = Array(result.shuffled().prefix(count))
+            return randomElements
+        }
+    }
+    
     public func pickOne(browser: BrowserOptions = .all, filter: ((String) -> Bool)? = nil, completion: ((String?) -> Void)?) {
         pickALot(count: 1, browser: browser, filter: filter) { results in
             completion?(results.first)
@@ -109,6 +144,9 @@ public class FakeUserAgent {
             let result: [String] = loop.reduce(into: [], { $0 += $1.0 })
             if result.count <= count {
                 completion?(result)
+            } else if 1 == count {
+                let randomIndex: Int = Int.random(in: 0..<result.count)
+                completion?([result[randomIndex]])
             } else {
                 let randomElements: [String] = Array(result.shuffled().prefix(count))
                 completion?(randomElements)

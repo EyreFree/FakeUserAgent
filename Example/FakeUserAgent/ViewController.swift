@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        print(FakeUserAgent.shared.pickOne(browser: .opera) ?? "Not found" + "\n")
+        
         FakeUserAgent.shared.pickALot(count: 5, browser: .chrome, filter: { userAgent in
             return userAgent.contains("Macintosh; Intel Mac OS X 10_")
         }, completion: { result in

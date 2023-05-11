@@ -1,5 +1,5 @@
 PODS:
-  - FakeUserAgent (0.1.0)
+  - FakeUserAgent (0.2.0)
 
 DEPENDENCIES:
   - FakeUserAgent (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FakeUserAgent: 66ee5e4cfaae91288635f1a66498d2dafc422ac0
+  FakeUserAgent: a42bf4b041b4431d95a02d6fcf89f9c143fbffbf
 
-PODFILE CHECKSUM: 906adbc7198d54ca8ce6e35872d5f5c56937a6c5
+PODFILE CHECKSUM: 1cbdb7fe9ac2aa2e95a434ce8e80f4e6a0967cf0
 
 COCOAPODS: 1.12.1
