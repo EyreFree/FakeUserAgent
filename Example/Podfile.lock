@@ -1,0 +1,16 @@
+PODS:
+  - FakeUserAgent (0.1.0)
+
+DEPENDENCIES:
+  - FakeUserAgent (from `../`)
+
+EXTERNAL SOURCES:
+  FakeUserAgent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FakeUserAgent: 66ee5e4cfaae91288635f1a66498d2dafc422ac0
+
+PODFILE CHECKSUM: 906adbc7198d54ca8ce6e35872d5f5c56937a6c5
+
+COCOAPODS: 1.12.1

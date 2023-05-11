@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "FakeUserAgent.swift_Example.app"
-               BlueprintName = "FakeUserAgent.swift_Example"
-               ReferencedContainer = "container:FakeUserAgent.swift.xcodeproj">
+               BuildableName = "FakeUserAgent_Example.app"
+               BlueprintName = "FakeUserAgent_Example"
+               ReferencedContainer = "container:FakeUserAgent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "FakeUserAgent.swift_Tests.xctest"
-               BlueprintName = "FakeUserAgent.swift_Tests"
-               ReferencedContainer = "container:FakeUserAgent.swift.xcodeproj">
+               BuildableName = "FakeUserAgent_Tests.xctest"
+               BlueprintName = "FakeUserAgent_Tests"
+               ReferencedContainer = "container:FakeUserAgent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "FakeUserAgent.swift_Tests.xctest"
-               BlueprintName = "FakeUserAgent.swift_Tests"
-               ReferencedContainer = "container:FakeUserAgent.swift.xcodeproj">
+               BuildableName = "FakeUserAgent_Tests.xctest"
+               BlueprintName = "FakeUserAgent_Tests"
+               ReferencedContainer = "container:FakeUserAgent.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "FakeUserAgent.swift_Example.app"
-            BlueprintName = "FakeUserAgent.swift_Example"
-            ReferencedContainer = "container:FakeUserAgent.swift.xcodeproj">
+            BuildableName = "FakeUserAgent_Example.app"
+            BlueprintName = "FakeUserAgent_Example"
+            ReferencedContainer = "container:FakeUserAgent.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "FakeUserAgent.swift_Example.app"
-            BlueprintName = "FakeUserAgent.swift_Example"
-            ReferencedContainer = "container:FakeUserAgent.swift.xcodeproj">
+            BuildableName = "FakeUserAgent_Example.app"
+            BlueprintName = "FakeUserAgent_Example"
+            ReferencedContainer = "container:FakeUserAgent.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -101,9 +101,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "FakeUserAgent.swift_Example.app"
-            BlueprintName = "FakeUserAgent.swift_Example"
-            ReferencedContainer = "container:FakeUserAgent.swift.xcodeproj">
+            BuildableName = "FakeUserAgent_Example.app"
+            BlueprintName = "FakeUserAgent_Example"
+            ReferencedContainer = "container:FakeUserAgent.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

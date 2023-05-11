@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  FakeUserAgent.swift
+//  FakeUserAgent
 //
 //  Created by EyreFree on 05/12/2023.
 //  Copyright (c) 2023 EyreFree. All rights reserved.
