@@ -48,7 +48,7 @@ dependencies: [
 ## Use
 
 ```swift
-import FakeUserAgent_swift
+import FakeUserAgent
 
 FakeUserAgent.shared.pickALot(count: 5, browser: .chrome, filter: { userAgent in
     return userAgent.contains("Macintosh; Intel Mac OS X 10_")
@@ -69,7 +69,7 @@ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_7) AppleWebKit/534.24 (KHTML, like G
 
 ## Update
 
-1. Get data file from [](https://github.com/fake-useragent/fake-useragent/blob/master/src/fake_useragent/data/browsers.json);
+1. Get data file from [fake_useragent/../browsers.json](https://github.com/fake-useragent/fake-useragent/blob/master/src/fake_useragent/data/browsers.json);
 2. Replace `"internet explorer"` to `"internetExplorer"` in file;
 3. Replace `}{` to `,` in file;
 4. Move to `FakeUserAgent.swift/Assets`
