@@ -1,9 +1,9 @@
-# FakeUserAgent.swift
+# FakeUserAgent
 
-[![CI Status](https://img.shields.io/travis/EyreFree/FakeUserAgent.svg?style=flat)](https://travis-ci.org/EyreFree/FakeUserAgent)
 [![Version](https://img.shields.io/cocoapods/v/FakeUserAgent.svg?style=flat)](https://cocoapods.org/pods/FakeUserAgent)
 [![License](https://img.shields.io/cocoapods/l/FakeUserAgent.svg?style=flat)](https://cocoapods.org/pods/FakeUserAgent)
 [![Platform](https://img.shields.io/cocoapods/p/FakeUserAgent.svg?style=flat)](https://cocoapods.org/pods/FakeUserAgent)
+[![SPM](https://img.shields.io/badge/SPM-ready-orange.svg)](https://swiftpackageindex.com/EyreFree/FakeUserAgent)
 
 Up-to-date simple useragent faker with real world database in Swift, inspired by [fake-useragent](https://github.com/fake-useragent/fake-useragent).
 
@@ -27,10 +27,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ### CocoaPods
 
-FakeUserAgent.swift is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+FakeUserAgent is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FakeUserAgent.swift'
+pod 'FakeUserAgent'
 ```
 
 ### Swift Package Manager
@@ -41,7 +41,7 @@ Once you have your Swift package set up, adding FakeUserAgent as a dependency is
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/EyreFree/FakeUserAgent.swift", .upToNextMinor(from: "0.2.0"))
+    .package(url: "https://github.com/EyreFree/FakeUserAgent", .upToNextMinor(from: "0.2.0"))
 ]
 ```
 
@@ -72,7 +72,7 @@ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_7) AppleWebKit/534.24 (KHTML, like G
 1. Get data file from [fake_useragent/../browsers.json](https://github.com/fake-useragent/fake-useragent/blob/master/src/fake_useragent/data/browsers.json);
 2. Replace `"internet explorer"` to `"internetExplorer"` in file;
 3. Replace `}{` to `,` in file;
-4. Move to `FakeUserAgent.swift/Assets`
+4. Move to `FakeUserAgent/Assets`
 
 ## Author
 
@@ -80,4 +80,4 @@ EyreFree, eyrefree@eyrefree.org
 
 ## License
 
-FakeUserAgent.swift is available under the MIT license. See the LICENSE file for more info.
+FakeUserAgent is available under the MIT license. See the LICENSE file for more info.
